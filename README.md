@@ -4,12 +4,13 @@ This project aimed to scrape reviews of the Spotify app from the Google Play Sto
 
 **Key Highlights:**
 **Scraping:** The google_play_scraper library was used to fetch all the reviews for the selected countries from the Google Play Store.
-Data Cleaning:
-**Duplicates:** The dataset was processed to remove duplicate entries based on the combination of 'userName' and 'content'. This was done in chunks to handle large datasets without memory issues. Any remaining duplicates were removed post the chunk-wise processing.
+**Data Cleaning:**
+**Duplicates:** The dataset was processed to remove duplicate entries based on the combination of 'userName' and 'content'. This was done in chunks to handle large datasets without memory issues. Any remaining duplicates were removed after the chunk-wise processing.
 **Missing Values**: Missing values in the 'appVersion' column were replaced with 'unknown'.
 **Date Formatting:** The 'date' column was converted to datetime format.
 **File Management:** The scraped reviews were saved after each country's data was fetched to ensure data persistence in case of any interruptions. The cleaned dataset was saved as 'google_play_reviews22.csv'.
 **Analysis:** The final cleaned dataset was examined to get insights such as the date range of the reviews and the number of reviews per country.
+
 **Results:**
 The cleaned dataset provided a comprehensive view of Spotify's reviews across the selected countries, starting from the earliest review date to the latest in 2023. This dataset can be further used for sentiment analysis, trend analysis, and more.
 
